@@ -12,8 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <>
-      <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
       <html lang="en">
+        <head>
+          <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
+        </head>
         <body className={inter.className}>{children}
           <p>Test</p>
         </body>
