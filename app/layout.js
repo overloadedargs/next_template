@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <head>
           <link rel="alternate stylesheet" title="Global" href="/styles/global_theme.css" />
           <link rel="alternate stylesheet" title="Higher Contrast" href="/styles/global_theme_contrast.css" type="text/css"/>
-          <link rel="alternate stylesheet" title="CSS Extra" href="/styles/global_theme_extra.css" type="text/css"/>
+          <link rel="alternate stylesheet" title="Darker Theme" href="/styles/global_theme_dark.css" type="text/css"/>
           <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
         </head>
         <body className={inter.className}>{children}
