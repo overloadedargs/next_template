@@ -12,7 +12,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   // pagestyle id link is css for js selector"
-  // for including themes with alternates in browser view page/style selector
   return (
     <>
       <html lang="en">
