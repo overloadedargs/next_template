@@ -8,6 +8,19 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    
+    --text-gradient: linear-gradient(
+      -45deg,
+      #42ca56 16.666%, 
+      #79fe40 16.666%, 
+      #79fe40 25%, 
+      #ffffff 25%, 
+      #0ccdfd 50%, 
+      #79fe40 50%, 
+      #79fe40 75%, 
+      #0ccdfd 75%, 
+      #0ccdfd 83.333%, 
+      #42ca56 83.333%);
   
     --primary-glow: linear-gradient(
       from 180deg at 50% 50%,

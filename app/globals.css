@@ -20,6 +20,46 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+footer {
+  background: rgb(37, 33, 48);
+  height:100px;
+  padding-left: 40px;
+}
+
+.paddingLeft {
+  padding-left: 40px;
+}
+
+.githubLinkWrapper {
+  position: relative;
+  width: max-content;
+  padding: 10px;
+  margin-bottom: 100px;
+  background-image: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+
+.githubLink::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 40px;
+  background-image: var(--text-gradient);
+  width: 100%;
+  z-index: 1;
+  height: 5px;
+}
+
+.githubLink::first-letter {
+  font-size: 22px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

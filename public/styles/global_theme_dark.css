@@ -9,6 +9,8 @@
     --background-start-rgb: 0, 40, 220;
     --background-end-rgb: 0, 0, 100;
   
+    --text-gradient: linear-gradient(45deg, #c3fe5d, #0151ff);
+
     --primary-glow: conic-gradient(
       from 180deg at 50% 50%,
       #16abff33 0deg,

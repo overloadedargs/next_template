@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 
 class StylesheetSelector extends Component {
-    readonly stylesheets = ["global", "global_theme_contrast", "global_theme_dark", "global_theme"];
+    readonly stylesheets = ["global_theme", "global_theme_contrast", "global_theme_dark"];
 
     handleChange = (event) => {
         event.preventDefault();
@@ -40,10 +40,7 @@ class StylesheetSelector extends Component {
                         })
                     }
                 </datalist>
-                <footer>
-                    <p>&nbsp;Change template by selecting view/page style in your browser.</p>
-                    <br />
-                </footer>
+                <br />
             </>
         )
     }

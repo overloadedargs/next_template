@@ -16,12 +16,17 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en">
         <head>
-          <link rel="stylesheet" id="pagestyle" title="preferred" href="./styles/global_theme.css" type="text/css"/>
+          <link rel="stylesheet" id="pagestyle" title="preferred" href="./styles/global_theme_contrast.css" type="text/css"/>
 
           <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
         </head>
         <body className={inter.className}>{children}
           <StylesheetSelector />
+          <footer>
+            <div className="githubLinkWrapper">
+              <a href="https://www.github.com/overloadedargs/next_template"><div className="githubLink">Next Template</div></a>
+            </div>
+          </footer>
         </body>
       </html>
     </>
