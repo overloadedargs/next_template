@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
 import StylesheetSelector from "./stylesheet_selector";
+import Header from './header';
  
 export const metadata = {
   keywords: ['Next.js', ' React', ' JavaScript', ' SEO'],
@@ -20,13 +21,15 @@ export default function RootLayout({ children }) {
 
           <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
         </head>
-        <body className={inter.className}>{children}
+        <body className={inter.className}>
+          <Header />
+          {children}
+          <StylesheetSelector />
           <footer>
             <div className="githubLinkWrapper">
               <a href="https://www.github.com/overloadedargs/next_template"><div className="githubLink">Next Template</div></a>
             </div>
           </footer>
-          <StylesheetSelector />
         </body>
       </html>
     </>

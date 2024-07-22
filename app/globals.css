@@ -85,6 +85,41 @@ a {
   padding: 40px;
 }
 
+.flexContainer {
+  display: flex; /* or inline-flex */
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  background: rgb(37, 33, 48);
+}
+
+.flexItem {
+  display:inline-block;
+  flex-basis: auto;
+  background-color: #dc5f11;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+
+.flexItem:hover {
+  border-radius: 20px;
+  border-color: #fff;
+  color: #fcd34d;
+}
+
+nav ul > li {
+  list-style: none;
+}
+
 .stylesheetSelectorWrapper {
   width: 100%;
   background-color: #242220;
@@ -101,7 +136,6 @@ a {
   position: relative;
   width: max-content;
   padding: 10px;
-  margin-bottom: 100px;
   background-image: var(--text-gradient);
   background-clip: text;
   -webkit-background-clip: text;

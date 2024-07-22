@@ -1,15 +1,30 @@
-// import Link from "next/link";
-// import React from "react";
+import Link from "next/link";
+import React from "react";
 
-// const header = () => {
-//   return (
-//     <div className="header">
-//       <h1>Nav Title</h1>
-//       <nav>
-//   
-//       </nav>
-//     </div>
-//   );
-// };
+const Header = () => {
+  return (
+    <div className="header">
+      <nav>
 
-// export default header;
+        <div className="flexContainer">
+            <ul>
+                <li className="flexItem">
+                    <Link href="/">Home</Link>
+                </li>
+                <li className="flexItem">
+                    <Link href="/dashboard">Dashboard</Link>
+                </li>
+                <li className="flexItem">
+                    <Link href="/article">Articles</Link>
+                </li>
+                <li className="flexItem">
+                    <Link href="/table">Table</Link>
+                </li>
+            </ul>  
+         </div> 
+       </nav>
+    </div>
+  );
+};
+
+export default Header;
