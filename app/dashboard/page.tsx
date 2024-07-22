@@ -44,14 +44,17 @@ export default function Page() {
         <>
             <div className="padding">
                 <h1>Dashboard Page</h1>
-                <div className="padding">
+                <div className="comment padding">
                     <form onSubmit={handleSubmit}>
-                        <label>Enter Text:
-                            <input id="data" type="text" />
-                        </label>
-                        <button type="submit">Submit</button>
-                        <br /><br />
-                        <hr />
+                        <label>Enter Name:</label>
+                        <input id="name" type="text" />
+                        <label>Enter Email:</label>
+                        <input id="email" type="text" />
+                        <label>Enter Comment:</label>
+                        <input id="comment" type="text" />
+                        <div className="padding">
+                          <button type="submit">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>

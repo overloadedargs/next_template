@@ -31,16 +31,19 @@ class StylesheetSelector extends Component {
     render() {
         return (
             <>
-                <label htmlFor="stylesheet choice">&nbsp;Choose a Stylesheet: </label>
-                <input type="text" name="style" id="style" list="stylesheet" onChange={(e) => this.handleChange(e)} />
-                <datalist id="stylesheet">
-                    {
-                        this.stylesheets.map((item) => {
-                            return <option key={item} value={item}>{item}</option>;
-                        })
-                    }
-                </datalist>
-                <br />
+                <div className="stylesheetSelectorWrapper">
+                    <div className="stylesheetSelector">
+                        <label htmlFor="stylesheet choice">&nbsp;Choose a Stylesheet: </label>
+                        <input type="text" name="style" id="style" list="stylesheet" onChange={(e) => this.handleChange(e)} />
+                        <datalist id="stylesheet">
+                            {
+                                this.stylesheets.map((item) => {
+                                    return <option key={item} value={item}>{item}</option>;
+                                })
+                            }
+                        </datalist>
+                    </div>
+                </div>
             </>
         )
     }
