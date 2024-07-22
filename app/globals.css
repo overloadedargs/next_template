@@ -169,6 +169,12 @@ section .articleImage {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+  section .articleImage {
+    width: 80%;
+  }
+}
+
 .articleImage::after, .articleImage::before {
   content: "";
   position: absolute;
