@@ -8,6 +8,8 @@
     --foreground-rgb: 200, 200, 10;
     --background-start-rgb: 0, 40, 220;
     --background-end-rgb: 0, 0, 100;
+
+    --grid-color: #2800d8;
   
     --text-gradient: linear-gradient(45deg, #c3fe5d, #0151ff);
 
