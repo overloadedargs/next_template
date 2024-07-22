@@ -29,6 +29,9 @@ export default function RootLayout({ children }) {
             <div className="githubLinkWrapper">
               <a href="https://www.github.com/overloadedargs/next_template"><div className="githubLink">Next Template</div></a>
             </div>
+            <div className="footerLink">
+              <a href="https://overloadedargs.github.io">overloadedargs.github.io</a>
+            </div>
           </footer>
         </body>
       </html>

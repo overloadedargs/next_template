@@ -63,6 +63,16 @@ button:hover {
   }
 }
 
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:48px;
+}
+
+form > label {
+  text-decoration: underline;
+  color: white;
+}
+
 input[type=text] {
   width: 100%;
   padding: 10px 20px 10px;
@@ -83,6 +93,9 @@ a {
 
 section {
   max-width: 95%;
+}
+
+section > p {
   text-align: justify;
 }
 
@@ -123,6 +136,10 @@ section {
 
 nav ul > li {
   list-style: none;
+}
+
+nav {
+  margin-top: 30px;
 }
 
 .gridWrapper {
@@ -244,6 +261,15 @@ section .articleImage {
 
 .githubLink::first-letter {
   font-size: 22px;
+}
+
+.footerLink {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  color: white;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 :target {

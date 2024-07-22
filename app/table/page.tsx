@@ -4,6 +4,7 @@
 export default function Page() {
     return (
         <>
+            <h1>Table</h1>
             <div className="gridWrapper">
                 <div>One</div>
                 <div>Two</div>
