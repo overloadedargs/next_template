@@ -1,15 +1,21 @@
-import { Inter } from "next/font/google";
+import { Ubuntu, Sono, Raleway } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
 import StylesheetSelector from "./stylesheet_selector";
 import Header from './header';
- 
+
 export const metadata = {
   keywords: ['Next.js', ' React', ' JavaScript', ' SEO'],
   title: 'Vercel Templates App'
 }
 
-const inter = Inter({ subsets: ["latin"] });
+const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"], variable: "--font-ubuntu"});
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["100", "400", "600"],
+  variable: "--font-raleway",
+});
+const sono = Sono({ weight: "400", subsets: ["latin"], variable: "--font-sono"});
 
 export default function RootLayout({ children }) {
   // pagestyle id link is css for js selector"
@@ -17,11 +23,11 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en">
         <head>
-          <link rel="stylesheet" id="pagestyle" title="preferred" href="./styles/global_theme_contrast.css" type="text/css"/>
+          <link rel="stylesheet" id="pagestyle" title="preferred" href="./styles/global_theme_contrast.css" type="text/css" />
 
-          <Script strategy="beforeInteractive" defer src="https://example.com/script.js"/>
+          <Script strategy="beforeInteractive" defer src="https://example.com/script.js" />
         </head>
-        <body className={inter.className}>
+        <body className={`${raleway.variable} ${sono.variable} ${ubuntu.variable} ${ubuntu.className}`}>
           <Header />
           {children}
           <StylesheetSelector />

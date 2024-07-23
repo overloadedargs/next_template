@@ -42,7 +42,7 @@ export default function Page() {
 
     return (
         <>
-            <h1>Dashboard Page</h1>
+            <h1>Dashboard</h1>
             <div className="comment padding">
                 <form onSubmit={handleSubmit}>
                     <label>Enter Name:</label>

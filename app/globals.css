@@ -12,17 +12,14 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 footer {
   background: rgb(37, 33, 48);
-  height:100px;
+  height: 100px;
   padding-left: 40px;
 }
 
@@ -57,18 +54,22 @@ button:hover {
 
 @media (min-width: 1024px) {
   .button {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     padding: 1rem 1.5rem;
-    line-height: 2rem; /* 32px */
+    line-height: 2rem;
   }
 }
 
 h1 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:48px;
+  font-family: var(--font-sono), Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 48px;
 }
 
-form > label {
+p {
+  font-family: var(--font-raleway);
+}
+
+form>label {
   text-decoration: underline;
   color: white;
 }
@@ -95,7 +96,7 @@ section {
   max-width: 95%;
 }
 
-section > p {
+section>p {
   text-align: justify;
 }
 
@@ -104,7 +105,8 @@ section > p {
 }
 
 .flexContainer {
-  display: flex; /* or inline-flex */
+  display: flex;
+  /* or inline-flex */
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -114,7 +116,7 @@ section > p {
 }
 
 .flexItem {
-  display:inline-block;
+  display: inline-block;
   flex-basis: auto;
   background-color: #dc5f11;
   background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
@@ -125,7 +127,7 @@ section > p {
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .flexItem:hover {
@@ -136,6 +138,7 @@ section > p {
 
 nav ul > li {
   list-style: none;
+  font-family: var(--font-kablammo), Impact, 'Arial Narrow Bold', sans-serif
 }
 
 nav {
@@ -149,29 +152,29 @@ nav {
   grid-auto-rows: 200px;
 }
 
-.gridWrapper > div {
+.gridWrapper>div {
   padding: 8px 4px;
   border: 1px black dashed;
   margin: 10px;
 }
 
-.gridWrapper > div:nth-child(10n + 1) {
+.gridWrapper>div:nth-child(10n + 1) {
   background-color: var(--grid-color);
 }
 
-.gridWrapper > div:nth-child(10n + 2) {
+.gridWrapper>div:nth-child(10n + 2) {
   background-color: var(--grid-color);
 }
 
-.gridWrapper > div:nth-child(10n + 3) {
+.gridWrapper>div:nth-child(10n + 3) {
   background-color: var(--grid-color);
 }
 
-.gridWrapper > div:nth-child(10n + 4) {
+.gridWrapper>div:nth-child(10n + 4) {
   background-color: var(--grid-color);
 }
 
-.gridWrapper > div:nth-child(10n + 5) {
+.gridWrapper>div:nth-child(10n + 5) {
   background-color: var(--grid-color);
 }
 
@@ -192,7 +195,8 @@ section .articleImage {
   }
 }
 
-.articleImage::after, .articleImage::before {
+.articleImage::after,
+.articleImage::before {
   content: "";
   position: absolute;
   top: 0;
@@ -207,7 +211,7 @@ section .articleImage {
   z-index: 1;
 }
 
-.articleImage > * {
+.articleImage>* {
   z-index: 100;
 }
 
@@ -229,7 +233,7 @@ section .articleImage {
 }
 
 .stylesheetSelector {
-  padding-top:20px;
+  padding-top: 20px;
   width: 70%;
   color: white;
   padding-left: 80px;
@@ -243,7 +247,7 @@ section .articleImage {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
@@ -274,27 +278,27 @@ section .articleImage {
 
 :target {
   transform: translateX(30px);
-  margin-top:40px;    
+  margin-top: 40px;
 }
 
 section {
   border-left: 40px;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
   width: 100%;
   padding: 10px 20px 10px;
   margin: 20px 10px;
-  margin-left: 20px;    
+  margin-left: 20px;
 }
 
-nav > a {
+nav>a {
   background-color: #242220;
   color: white;
   padding: 20px;
 }
 
-section > div {
+section>div {
   margin-top: 20px;
-  transition: all 0.5s ease;     
+  transition: all 0.5s ease;
 }
 
 @media (prefers-color-scheme: dark) {
