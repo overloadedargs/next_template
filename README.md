@@ -2,7 +2,7 @@ This is a NextJS Template which you can use:
 
 ## Features
 
- * Stylesheet Selector for use in Design or otherwise using CSS var and HTML Datalist attribute
+ * Stylesheet Selector for use in Design or otherwise using CSS var and HTML Datalist tag
  * Multiple fonts
  * Basic CSS Animation for text in Articles
  * Debounce from Lodash example on form
