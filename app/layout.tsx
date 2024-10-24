@@ -1,4 +1,4 @@
-import { Ubuntu, Sono, Raleway } from "next/font/google";
+import { Ubuntu, Urbanist, Raleway } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
 import StylesheetSelector from "./stylesheet_selector";
@@ -15,7 +15,7 @@ const raleway = Raleway({
   weight: ["100", "400", "600"],
   variable: "--font-raleway",
 });
-const sono = Sono({ weight: "400", subsets: ["latin"], variable: "--font-sono"});
+const sono = Urbanist({ weight: "400", subsets: ["latin"], variable: "--font-urbanist"});
 
 export default function RootLayout({ children }) {
   // pagestyle id link is css for js selector"
