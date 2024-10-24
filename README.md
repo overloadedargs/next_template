@@ -46,8 +46,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Screenshots
 
-![Stylesheet Selector](https://github.com/overloadedargs/next_template/blob/main/screenshots/stylesheet_selector.png?raw=true) "Stylesheet Selector")
+![Stylesheet Selector](https://github.com/overloadedargs/next_template/blob/main/screenshots/stylesheet_selector.png?raw=true) "Stylesheet Selector"
 
-![Table](https://github.com/overloadedargs/next_template/blob/main/screenshots/table.png?raw=true) "Table")
+![Table](https://github.com/overloadedargs/next_template/blob/main/screenshots/table.png?raw=true) "Table"
 
-![Article](https://github.com/overloadedargs/next_template/blob/main/screenshots/article.png?raw=true) "Article")
+![Article](https://github.com/overloadedargs/next_template/blob/main/screenshots/article.png?raw=true) "Article"
