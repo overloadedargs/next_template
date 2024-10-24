@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a NextJS Template which you can use:
+
+## Features
+
+ * Stylesheet Selector for use in Design or otherwise using CSS var and HTML Datalist attribute
+ * Multiple fonts
+ * Basic CSS Animation for text in Articles
+ * Debounce from Lodash example on form
+ * CSS Grid with nth-child rules e.g. 10n + 1
+ * Media queries and Flex Layout
 
 ## Getting Started
 
@@ -34,3 +43,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Screenshots
+
+![Stylesheet Selector](https://github.com/overloadedargs/next_template/blob/main/stylesheet_selector.png?raw=true) "Stylesheet Selector")
+
+![Table](https://github.com/overloadedargs/next_template/blob/main/table.png?raw=true) "Table")
+
+![Article](https://github.com/overloadedargs/next_template/blob/main/article.png?raw=true) "Article")
