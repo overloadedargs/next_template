@@ -2,41 +2,26 @@
 
 // `app/table/page.tsx` is the UI for the `/table URL
 export default function Page() {
+    let numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+        "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen",
+        "Nineteen", "Twenty", "Twenty One", "Twenty Two", "Twenty Three", "Twenty Four", "Twenty Five"];
+    
+    let rows = [];
+
+
     return (
         <>
             <h1>Table</h1>
             <div className="gridWrapper">
-                <div>One</div>
-                <div>Two</div>
-                <div>Three</div>
-                <div>Four</div>
-                <div>Five</div>
-
-                <div>Six</div>
-                <div>Seven</div>
-                <div>Eight</div>
-                <div>Nine</div>
-                <div>Ten</div>
-
-                <div>Eleven</div>
-                <div>Twelve</div>
-                <div>Thirteen</div>
-                <div>Fourteen</div>
-                <div>Fifteen</div>
-
-                <div>Sixteen</div>
-                <div>Seventeen</div>
-                <div>Eighteen</div>
-                <div>Nineteen</div>
-                <div>Twenty</div>
-
-                <div>Twenty One</div>
-                <div>Twenty Two</div>
-                <div>Twenty Three</div>
-                <div>Twenty Four</div>
-                <div>Twenty Five</div>
+            { numbers.map((number, index) => (
+                <div key={index}>
+                  {index + 1}
+                  &nbsp;
+                  {number}
+                </div>
+              )) 
+            }
             </div>
-
         </>
     )
 }
